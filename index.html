@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADt6/UANQX3ADMA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiEREiIiIiIiIRESIiIiIiIgAAIiIiIiIiAAAiIiIiIiIAACIiIiIiIgAAIiIREQAAAAAAABERAAAAAAAAEREAAAAAAAAREQAAAAAAABEiIiIAACIiIiIiIgAAIiIiIiIiAAAiIiIiIiIAACIiIiIiIhERIiIiIiIiEREiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+    <title>TripSorter</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="well">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="form search-form">
+                        <div class="form-group">
+                            <select class="form-control" id="from">
+                           <option selected hidden>From</option>
+                           <option value="london">London</option>
+                           <option value="paris">Paris</option>
+                           <option value="amsterdam">Amsterdam</option>
+                           <option value="warsaw">Warsaw</option>
+                           <option value="brussels">Brussels</option>
+                           <option value="stockholm">Stockholm</option>
+                           <option value="prague">Prague</option>
+                           <option value="moscow">Moscow</option>
+                           <option value="madrid">madrid</option>
+                           <option value="geneva">Geneva</option>
+                           <option value="budapest">Budapest</option>
+                           <option value="kiew">Kiev</option>
+                           <option value="lisbon">Lisbon</option>
+                           <option value="rome">Rome</option>
+                           <option value="athens">Athens</option>
+                           <option value="istanbul">Istanbul</option>
+                       </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" id="to">
+                           <option selected hidden>to</option>
+                           <option value="london">London</option>
+                           <option value="paris">Paris</option>
+                           <option value="amsterdam">Amsterdam</option>
+                           <option value="warsaw">Warsaw</option>
+                           <option value="brussels">Brussels</option>
+                           <option value="stockholm">Stockholm</option>
+                           <option value="prague">Prague</option>
+                           <option value="moscow">Moscow</option>
+                           <option value="madrid">madrid</option>
+                           <option value="geneva">Geneva</option>
+                           <option value="budapest">Budapest</option>
+                           <option value="kiew">Kiev</option>
+                           <option value="lisbon">Lisbon</option>
+                           <option value="rome">Rome</option>
+                           <option value="athens">Athens</option>
+                           <option value="istanbul">Istanbul</option>
+                       </select>
+                        </div>
+
+                        <div class="form-group" id="radio_btn">
+                            <label class="radio-inline"><input value="cheap" id="radio_cheap" type="radio" name="opt">Cheapest</label>
+                            <label class="radio-inline"><input value="fast" id="radio_fast" type="radio" name="opt">Fastest</label>
+                        </div>
+
+                        <button id="search_btn" type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-search"></span> Search</button>
+                        <button id="reset_btn" type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-refresh"></span> Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----  Container  ----->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div id="update"></div>
+            </div>
+        </div>
+    </div>
+    <!---------  Update Container    ------------->
+
+    <!--<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery/jquery-3.0.0.min.js"><\/script>');
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
